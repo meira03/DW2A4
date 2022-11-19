@@ -4,7 +4,7 @@ import {Popover} from '@headlessui/react';
 import { WidgetForm } from './WidgetForm/index';
 
 export function Widget(){
-    // const [isWidgetOpen, setIsWidgetOpen] = useState(false);
+    // const [isWidgetOpen, setIsWidgetOpen] = useState(false);a
 
     // function toggleWidgetVisibility() {
     //     setIsWidgetOpen(!isWidgetOpen)
