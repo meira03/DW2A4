@@ -1,5 +1,5 @@
 import express from 'express'
-import { NodemailerMailAdapter } from './adapterts/nodemailer/NodemailerMailAdapter';
+import { NodemailerMailAdapter } from './adapters/nodemailer/NodemailerMailAdapter';
 import { PrismaFeedbackRepository } from './repositories/prisma/PrismaFeedbackRepository';
 import { SubmitFeedbackUseCase } from './useCase/SubmitFeedbackUseCase';
 
