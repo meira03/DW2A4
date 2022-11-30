@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { HeaderContent } from "./page/HeaderContent";
-import { MainContent } from "./page/MainContent";
+import { ConteudoPagina } from "./page/ConteudoPagina";
 
 export function CoronaCases() {
     const [city, setCity] = useState("BRAZIL");
@@ -11,8 +10,7 @@ export function CoronaCases() {
     
     return (
         <>
-            <HeaderContent city={city} />
-            <MainContent getCity={getCity} />
+            <ConteudoPagina getCity={getCity} />
         </>
     )
 }
