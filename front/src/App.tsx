@@ -1,7 +1,15 @@
+import { CoronaCases } from "./components/CoronaCases";
+import { MainContent } from "./components/mainContent";
 import { Widget } from "./components/Widget";
 
 export function App(){
-  return <Widget />
+  return (
+    <div>
+      <MainContent />
+    </div>
+  )
+    
+    
 }
 
 /*import { useState } from 'react'
