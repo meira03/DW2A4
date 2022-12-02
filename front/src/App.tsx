@@ -1,6 +1,4 @@
-import { CoronaCases } from "./components/CoronaCases";
 import { MainContent } from "./components/mainContent";
-import { Widget } from "./components/Widget";
 
 export function App(){
   return (

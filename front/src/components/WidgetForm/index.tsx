@@ -2,6 +2,7 @@ import { CloseButton } from "../CloseButton";
 import bugImageUrl from "../../assets/bug.svg"
 import ideaImageUrl from "../../assets/idea.svg"
 import thoughtImageUrl from "../../assets/thought.svg"
+import likeImageUrl from "../../assets/like.svg"
 import { useState } from "react";
 import { FeedbackTypeStep } from "./Steps/FeedbackTypeStep";
 import { FeedbackContentStep } from "./Steps/FeedbackContentStep";
@@ -27,6 +28,13 @@ export const feedbackTypes = {
         image:{
             source: thoughtImageUrl,
             alt: 'Imagem de uma nuvem de pensamento'
+        },
+    },
+    LIKE: {
+        title: 'Like',
+        image:{
+            source: likeImageUrl,
+            alt: 'Imagem de uma mão fazendo "jóia"'
         },
     }
 }
