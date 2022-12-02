@@ -5,7 +5,7 @@ interface InputCEPProps {
     getEstado: (uf: string) => void;
 }
 
-export function InputCEP({ getEstado }: InputCEPProps) {
+export function InputCEP() {
     const [searchCEP, setSearchCEP] = useState<string>('');
     const [estadoUF, setEstadoUF] = useState<string>('')
 
@@ -42,7 +42,7 @@ export function InputCEP({ getEstado }: InputCEPProps) {
                     className="flex flex-col p-1"
                     onSubmit={(value) => handleSubmitSearch(value)}
                 >
-                    <label className="font-bold mb-1">Informe o CEP da rua desejada:</label>
+                    <label className="font-bold mb-1">Informe o CEP da sua rua:</label>
                     <div className="flex flex-row ">
                         <input type="text"
                             className="w-1/4 min-w-[100px] bg-zinc-800 text-zinc-100"
@@ -57,7 +57,7 @@ export function InputCEP({ getEstado }: InputCEPProps) {
                 </form>
 
             </section>
-            {estadoUF && <DadosCovid uf={estadoUF} getCityName={getEstado} />}
+            {estadoUF && <DadosCovid uf={estadoUF}/>}
         </>
     )
 }

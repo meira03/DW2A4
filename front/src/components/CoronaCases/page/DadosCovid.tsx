@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 
 
 interface covidDataRepository {
@@ -11,10 +11,9 @@ interface covidDataRepository {
 
 interface DadosCovidProps {
     uf: string;
-    getCityName: (parameter: string) => void;
 }
 
-export function DadosCovid({ uf, getCityName }: DadosCovidProps) {
+export function DadosCovid({ uf}: DadosCovidProps) {
     const [covidData, setCovidData] = useState<covidDataRepository[]>([
         {
             uf: 0,
@@ -30,7 +29,6 @@ export function DadosCovid({ uf, getCityName }: DadosCovidProps) {
             .then(response => response.json())
             .then(data => {
                 setCovidData([data])
-                getCityName(data.state)
             })
 
     return (
